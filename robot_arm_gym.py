@@ -8,10 +8,9 @@ from gym.envs.registration import register
 class RobotArm(gym.Env):
     #metadata = {}
     def __init__(self, upper_arm_length, lower_arm_length, max_acceleration, 
-                 free_angles=4, dt=0.05, optimal_time=40, render_mode=None):
+                 free_angles=4, dt=0.05, render_mode=None):
         self._free_angles = free_angles
         self._dt = dt
-        self._optimal_time = optimal_time
         self._time_step = 0
         self._angles = np.empty((self._free_angles), dtype=np.float32)
         self._velocities = np.empty((self._free_angles), dtype=np.float32)
@@ -68,7 +67,6 @@ class RobotArm(gym.Env):
         return observation, reward, terminated, False, info
     
     def _get_reward(self):
-        cup_radius = 3
         ball_landing, _ = self._get_ball_landing()
         cup_distance =  np.linalg.norm(self._cup_position[:2])
         r_b = ball_landing / np.linalg.norm(ball_landing)
