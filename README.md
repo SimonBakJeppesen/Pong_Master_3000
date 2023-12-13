@@ -13,3 +13,4 @@ The 3D plot depicts the trajectories of a robot arm, where each trajectory is as
 ![policy_performance](https://github.com/SimonBakJeppesen/Pong_Master_3000/assets/55833078/da0b1a3b-ae25-4054-93fc-453cc3b59b4a)
 
 The arm starts to make more exotic throws when trained from certain starting positions. :)
+![robot_arm_throw_movement start1](https://github.com/SimonBakJeppesen/Pong_Master_3000/blob/main/robot_arm_throw_movement_start1.gif)
