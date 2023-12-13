@@ -11,3 +11,5 @@ Trained for 300 episodes:
 
 The 3D plot depicts the trajectories of a robot arm, where each trajectory is associated with a varying color representing different training episodes.
 ![policy_performance](https://github.com/SimonBakJeppesen/Pong_Master_3000/assets/55833078/da0b1a3b-ae25-4054-93fc-453cc3b59b4a)
+
+The arm starts to make more exotic throws when trained from certain starting positions. :)
